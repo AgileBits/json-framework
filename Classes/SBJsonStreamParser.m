@@ -259,6 +259,7 @@
     @finally {
         [pool drain];
     }
+	return SBJsonStreamParserError;
 }
 
 @end
