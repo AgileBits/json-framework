@@ -117,6 +117,9 @@ typedef enum {
  
 */
 @interface SBJsonStreamParserAdapter : NSObject <SBJsonStreamParserDelegate> {
+	id<SBJsonStreamParserAdapterDelegate> delegate;
+	NSUInteger levelsToSkip;
+
 @private
 	NSUInteger depth;
     NSMutableArray *array;
